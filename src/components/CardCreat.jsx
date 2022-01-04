@@ -4,7 +4,7 @@ import images from './images'
 const CardCreat = () => {
 
     const listItems = images.map(({ id, src, srcD, text, description }) =>
-        <li key={id} className='h-[10.2em] md:h-[22em] relative'>
+        <li key={id} className='md:w-[16em] relative md:flex-[1_0_21%]'>
             <div className='bg-black opacity-30 w-full h-full absolute'></div>
             <img src={src} alt={description} className='h-[100%] object-cover md:hidden' />
             <img src={srcD} alt={description} className='h-[100%] object-cover hidden md:block' />
@@ -13,7 +13,7 @@ const CardCreat = () => {
     )
 
     return (
-        <ul className='flex flex-col space-y-4 md:md:row-start-2 row-end-3 md:col-start-1 col-end-3 md:mt-8 md:grid md:grid-cols-4 md:space-y-0 md:gap-4'>
+        <ul className='flex flex-col space-y-4 md:md:row-start-2 row-end-3 md:col-start-1 col-end-3 md:mt-8 md:space-y-0 md:flex-row md:flex-wrap md:items-center md:justify-evenly md:gap-4'>
             {listItems}
         </ul>
     )
