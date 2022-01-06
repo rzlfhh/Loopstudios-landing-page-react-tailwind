@@ -44,6 +44,8 @@ Users should be able to:
 
 ### What I learned
 
+Using map to make a list of image and text 
+
 ### Continued development
 
 I still struggle a lot with hooks on React, so i think I should focus on them to understand better. And I want to learn Styled-components too.
